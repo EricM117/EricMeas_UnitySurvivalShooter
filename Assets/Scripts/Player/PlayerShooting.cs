@@ -3,30 +3,29 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
     public WeaponSwitching weaponSwitching; // Get access to the weapon switching
-
-    float timer;
-    Ray shootRay;
-    RaycastHit shootHit;
-    int shootableMask;
-    ParticleSystem gunParticles;
     public LineRenderer gunLine;
     public LineRenderer gunLineLeft;
     public LineRenderer gunLineRight;
-    AudioSource gunAudio;
-    Light gunLight;
-    float effectsDisplayTime = .2f;
+    
+    private float timer;
+    private Ray shootRay;
+    private RaycastHit shootHit;
+    private int shootableMask;
+    private ParticleSystem gunParticles;
+    private AudioSource gunAudio;
+    private Light gunLight;
+    private float effectsDisplayTime = .2f;
 
-    void Awake()
+    private void Awake()
     {
         shootableMask = LayerMask.GetMask("Shootable");
         gunParticles = GetComponent<ParticleSystem>();
-        //gunLine = GetComponent<LineRenderer>();
         gunAudio = GetComponent<AudioSource>();
         gunLight = GetComponent<Light>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         timer += Time.deltaTime;
 
@@ -43,9 +42,9 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
-    Weapon GetCurrentWeapon()
+    Weapon GetCurrentWeapon() // Finds the current weapon/gameobject in the WeaponSwitching script and returns the Weapon script in that object for it to be used in this script
     {
-        GameObject weaponObject = weaponSwitching.weapons[weaponSwitching.selectedWeapon];
+        GameObject weaponObject = weaponSwitching.weapons[weaponSwitching.selectedWeapon]; 
         return weaponObject.GetComponent<Weapon>();
     }
 
