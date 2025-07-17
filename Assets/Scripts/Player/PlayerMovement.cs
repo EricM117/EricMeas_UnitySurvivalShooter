@@ -9,14 +9,14 @@ public class PlayerMovement : MonoBehaviour
     public float dashCooldown = 5f; // Timer between next dash
     public AudioClip dashClip; // Container for dash sound effect
 
-    Vector3 movement;
-    Animator anim;
-    AudioSource playerAudio;
-    Rigidbody playerRB;
-    int floorMask;
-    float camRayLength = 100f;
-    float currentSpeed; // Container to store player speed for future speed changes
-    bool canDash = true; // Check to make sure that the player can dash
+    private Vector3 movement;
+    private Animator anim;
+    private AudioSource playerAudio;
+    private Rigidbody playerRB;
+    private int floorMask;
+    private float camRayLength = 100f;
+    private float currentSpeed; // Container to store player speed for future speed changes
+    private bool canDash = true; // Check to make sure that the player can dash
 
     [SerializeField] private TrailRenderer tr; // Container for the trail renderer, makes it public
 

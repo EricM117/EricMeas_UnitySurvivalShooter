@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     public int currentAmmo;
     public float reloadTime = 1f;
 
-    bool isReloading = false;
+    private bool isReloading = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

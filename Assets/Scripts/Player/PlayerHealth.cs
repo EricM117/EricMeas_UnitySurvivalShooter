@@ -16,12 +16,12 @@ public class PlayerHealth : MonoBehaviour
     public Color flashColor = new Color(1f, 0f, 0f, .1f);
     public GameObject player;
 
-    Animator anim;
-    AudioSource playerAudio;
-    PlayerMovement playerMovement;
-    PlayerShooting playerShooting;
-    bool isDead;
-    bool isDamaged;
+    private Animator anim;
+    private AudioSource playerAudio;
+    private PlayerMovement playerMovement;
+    private PlayerShooting playerShooting;
+    private bool isDead;
+    private bool isDamaged;
 
     void Awake()
     {

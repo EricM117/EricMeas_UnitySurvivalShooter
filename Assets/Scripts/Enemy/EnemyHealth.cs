@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
     public int startingHealth = 100;
     public int currentHealth;
     public float sinkSpeed = 2.5f;
+    public float sinkTime = 2f;
     public int scoreValue = 10;
     public AudioClip deathClip; // Enemy death sound
 
@@ -70,6 +71,6 @@ public class EnemyHealth : MonoBehaviour
         isSinking = true;
         ScoreManager.score += scoreValue;
         ScoreManager.Instance.ShowScore();
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, sinkTime);
     }
 }

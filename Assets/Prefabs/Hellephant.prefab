@@ -10198,6 +10198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 5
   attackDamage: 50
+  player: {fileID: 2148282719944345936, guid: 0432e2de7dd9ff540a4b97a62f508140, type: 3}
 --- !u!114 &2535244560745874971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10210,6 +10211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd1d71488c25e7428b889bc8bce447b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2148282719944250734, guid: 0432e2de7dd9ff540a4b97a62f508140, type: 3}
 --- !u!1 &1915870434614438
 GameObject:
   m_ObjectHideFlags: 0

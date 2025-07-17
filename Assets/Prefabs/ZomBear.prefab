@@ -189,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 1
   attackDamage: 20
+  player: {fileID: 2148282719944345936, guid: 0432e2de7dd9ff540a4b97a62f508140, type: 3}
 --- !u!114 &114858573952562612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd1d71488c25e7428b889bc8bce447b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2148282719944250734, guid: 0432e2de7dd9ff540a4b97a62f508140, type: 3}
 --- !u!82 &82684988033110934
 AudioSource:
   m_ObjectHideFlags: 0
